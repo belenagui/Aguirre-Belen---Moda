@@ -47,14 +47,17 @@
     margin-right: 20px;
     font-weight: 900;
 }
-.greetingContainer{
+#ItemListContainer{
     display: grid;
-    height: 540px;
+    height: 600px;
     background-image:url(./assets/banner.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+
     place-items: center;
 }
-.greetingContainer h1{
-    font-size: 25px;
+#ItemListContainer h1{
+    font-size: 45px;
     color: whitesmoke;
     margin-bottom: 500px;
 }

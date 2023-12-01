@@ -15,7 +15,7 @@ const App = () => {
 return (
   <div id="app">
      <NavBar/>
-    <CartWidget/>
+    
     <ItemListContainer greeting="Bienvenidos a MBA moda" />
   </div>
   );
