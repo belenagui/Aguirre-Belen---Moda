@@ -11,7 +11,7 @@ import ItemListContainer from './components/ItemListContainer'
 
 
 const App = () => {
-  document.body.style.backgroundColor ='#FCEADE'
+  document.body.style.backgroundColor ='#242a30'
 return (
   <div id="app">
      <NavBar/>
