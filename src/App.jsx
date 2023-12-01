@@ -1,36 +1,24 @@
-import { BrowserRouter,Routes, Route } from 'react-router-dom'
+
 import React from 'react'
 import NavBar from './components/NavBar'
+import CartWidget from './components/CartWidget'
+import "./main.css"
 import ItemListContainer from './components/ItemListContainer'
-import ItemDetailContainer from './components/ItemDetailContainer'
-import Home from "./components/Home"
-import About from "./components/About"
-import Cart from "./components/Cart"
+
+
+
 
 
 
 const App = () => {
   document.body.style.backgroundColor ='#FCEADE'
 return (
-  <BrowserRouter>
-
-    <NavBar/>
-
-    <Routes>
-
-      <Route exact path="/" element={<ItemListContainer />}/>
-      <Route path="/category/:category" element={<ItemListContainer />}/>
-      <Route exact path="/item/:id" element={<ItemDetailContainer/>}/>
-      <Route exact path="/" element={<Home/>}/>
-      <Route exact path="/about" element={<About/>}/>
-      <Route exact path="/Cart" element={<Cart/>}/>
-
-    </Routes>
-    
-
-
-  </BrowserRouter>
-  )
+  <div id="app">
+     <NavBar/>
+    <CartWidget/>
+    <ItemListContainer greeting="Bienvenidos a MBA moda" />
+  </div>
+  );
 }
 
 export default App
